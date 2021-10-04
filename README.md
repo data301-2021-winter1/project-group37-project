@@ -13,8 +13,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your dataset in about 150-200 words
 
-{Add your stuff here}
-
+Our dataset is a collection of the season statistics of Major League Baseball teams and players from 1871-2020. The data is supplied by the Chadwick Baseball Bureau, which is the historical statistical data provider of Baseball-Reference. This open data provided by the bureau is a part of their mission to document the history of baseball. The dataset contains statistics for batting, pitching, and fielding for the regular and post-season. It also contains salaries and other niche statistics. The people dataset is the Chadwick Baseball Register, a collection of people who have been involved in a high level of baseball as a player, manager, or umpire. The data is updated once a year in the offseason with the previous season's stats, except for the register which is updated more often. The data is in the form of counting stats only and any averages or advanced stats must be calculated manually. Players within the data are labeled with a unique playerID, the player's names and playerID's are all listed in the register. The register also contains the cities, countries, and dates of people's births and deaths. 
 ## Team Members
 
 - Person 1: one sentence about you!
