@@ -9,7 +9,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-{Add your stuff here}
+In the past 20 years data and analytics have changed the sports landscape. Specifically in baseball where there are countless stats and a large sample size the way teams are constructed is changing. You can see this change in the way teams spend their money, and over the years they have prioritized different stats when signing players. It would be interesting to look into the changes in what statistics the highest paid players had in common and who may have been underpaid and underrarted when they played.  
 
 ## Describe your dataset in about 150-200 words
 
