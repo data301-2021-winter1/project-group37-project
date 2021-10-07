@@ -18,7 +18,7 @@ Our dataset is a collection of the season statistics of Major League Baseball te
 
 - Person 1: one sentence about you!
 - Person 2: one sentence about you!
-- Person 3: one sentence about you!
+- Person 3: I am a fifth year management student at UBC Okanagan and I love the outdoors!
 
 ## Images
 
