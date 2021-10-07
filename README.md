@@ -9,7 +9,13 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-In the past 20 years data and analytics have changed the sports landscape. Specifically in baseball where there are countless stats and a large sample size the way teams are constructed is changing. You can see this change in the way teams spend their money, and over the years they have prioritized different stats when signing players. It would be interesting to look into the changes in what statistics the highest paid players had in common and who may have been underpaid and underrarted when they played.  
+In the past 20 years data and analytics have changed the sports landscape. Specifically in baseball where there are countless stats and a large sample size the way teams are constructed is changing. You can see this change in the way teams spend their money, and over the years they have prioritized different stats when signing players. It would be interesting to look into the changes in what statistics the highest paid players had in common and who may have been underpaid and underrarted when they played. 
+Statistics can be used in many ways.
+To Select players - 
+The breakdown of statistics in order to advance a teams roster is a theory that has been explored more ever since the story of how the 2002 Oakland athletics took this new approach to the game and made it to the world series finals as a "low class" low budget team. By analyzing statistics they were able to replace star players for much cheaper ones that no-one else wanted based off of theories.
+To advise players of situations - 
+By storing all of this data about every player allows coaches and players to adjust on the field to every player that comes up to bat. For example, using data a pitcher can understand what pitches a certain batter hits well and doesn't and where when he makes contact the ball goes. 
+
 
 ## Describe your dataset in about 150-200 words
 
