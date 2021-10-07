@@ -17,7 +17,7 @@ Our dataset is a collection of the season statistics of Major League Baseball te
 ## Team Members
 
 - Person 1: one sentence about you!
-- Person 2: one sentence about you!
+- Person 2: (Tyler Mattson): I am a 3rd year management student at UBCO and have played sports all of my life so im pretty competitive.
 - Person 3 (Jessy Gale): I am a fifth year management student at UBC Okanagan and I love the outdoors!
 
 ## Images
