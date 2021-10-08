@@ -126,3 +126,6 @@ enforcement ladder](https://github.com/mozilla/diversity).
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
+
+
+Ehmke, C. (2014). Contributor Covenant Code of Conduct. Retrieved from https://www.contributor-covenant.org/version/2/0/code_of_conduct/
