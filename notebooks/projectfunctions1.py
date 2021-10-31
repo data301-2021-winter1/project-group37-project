@@ -34,7 +34,7 @@ def pitching_load_and_process(file_path):
         )
     pitch_clean_year = (
             pitching_clean.groupby('yearID').sum()
-            .drop(["stint", "BK", "GF", "SH", "SF", "GIDP", "BAOpp", "ERA", "W", "L", "G", "GS", "BFP"], axis = 1)
+            .drop(["stint", "BK", "GF", "SH", "SF", "GIDP", "BAOpp", "ERA", "W", "L", "G", "BFP"], axis = 1)
             .assign(
                 ERA = lambda x: (9 * x['ER']) / (x['IPouts'] / 3),
                 KPG = lambda x: 9 * x['SO']/(x['IPouts']/3),
@@ -49,8 +49,11 @@ def merge_batting_pitching(bat, pitch):
     data_clean = (
         pd.merge(bat, pitch[diff_cols], on = ['yearID'])
         .assign(
-            BABIP = lambda x: (x['H'] - x['HR']) / (x['AB']-x['SO']-x['HR']) 
+            BIP = lambda x: x['PA'] - x['HR'] - x['SO'] - x['BB'] - x['HBP'],
+            BABIP = lambda x: (x['H'] - x['HR']) / (x['AB']-x['SO']-x['HR']), 
+            games = lambda x: x['GS']/2
         )
+        .drop(['GS'], axis = 1)
         .reset_index()
     )
     return data_clean
@@ -58,4 +61,6 @@ def merge_batting_pitching(bat, pitch):
 
 def normal_data(df):
     dfn=((df-df.min())/(df.max()-df.min()))*20 
+    dfn[['yearID', 'games', 'decade']] = df[['yearID', 'games', 'decade']] 
     return dfn
+
