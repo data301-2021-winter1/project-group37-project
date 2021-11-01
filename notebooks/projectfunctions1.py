@@ -6,6 +6,12 @@ import seaborn as sns
 #Still need to add docstrings to these functions
 
 def batting_load_and_process(file_path):
+    ''' 
+    Groups batting file by year while adding calculated stats and dropping unecessary ones.
+
+    Arguments:
+    file_path -- (str) relative path to raw batting data
+    '''
     batting_clean = (
                 pd.read_csv(file_path)
                 .fillna(0)
@@ -28,6 +34,12 @@ def batting_load_and_process(file_path):
 
 
 def pitching_load_and_process(file_path):
+    ''' 
+    Groups pitching file by year while adding calculated stats and dropping unecessary ones.
+
+    Arguments:
+    file_path -- (str) relative path to raw pitching data
+    '''
     pitching_clean = (
                 pd.read_csv('../data/raw/Pitching.csv')
                 .fillna(0)
@@ -45,6 +57,13 @@ def pitching_load_and_process(file_path):
 
 
 def merge_batting_pitching(bat, pitch):
+    ''' 
+    Merges hitting and pitcing data, drops duplicate columns, calculates other general stats.
+
+    Arguments:
+    bat -- (df) cleaned batting data frame
+    pitch -- (df) cleaned pitching data fram
+    '''
     diff_cols = pitch.columns.difference(bat.columns)
     data_clean = (
         pd.merge(bat, pitch[diff_cols], on = ['yearID'])
@@ -60,7 +79,23 @@ def merge_batting_pitching(bat, pitch):
 
 
 def normal_data(df):
+    ''' 
+    Normalizes clean data, ignores yearID, games and decade.
+
+    Arguments:
+    df -- (df) cleaned data
+    '''
     dfn=((df-df.min())/(df.max()-df.min()))*20 
     dfn[['yearID', 'games', 'decade']] = df[['yearID', 'games', 'decade']] 
     return dfn
 
+def per_game(df):
+    ''' 
+    Calculates stats per game, ignores yearID, games and decade
+
+    Arguments:
+    df -- (df) cleaned data
+    '''
+    dfpg = df.div(df['games'], axis = 0)
+    dfpg[['decade', 'games', 'yearID']] = df[['decade', 'games', 'yearID']]
+    return dfpg
