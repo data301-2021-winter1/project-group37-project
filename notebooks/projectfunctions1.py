@@ -68,7 +68,7 @@ def merge_batting_pitching(bat, pitch):
     data_clean = (
         pd.merge(bat, pitch[diff_cols], on = ['yearID'])
         .assign(
-            BIP = lambda x: x['PA'] - x['HR'] - x['SO'] - x['BB'] - x['HBP'],
+            BIP = lambda x: x['AB'] - x['HR'] - x['SO'],
             BABIP = lambda x: (x['H'] - x['HR']) / (x['AB']-x['SO']-x['HR']), 
             games = lambda x: x['GS']/2
         )
