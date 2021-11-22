@@ -1,0 +1,3376 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='pergame+' inline='true' name='federated.1jlut6n0wdzzf71bt60z606zq92g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pergame' name='textscan.19e48ir1wch4zh1afwz6b1d39w8t'>
+            <connection class='textscan' directory='C:/Users/austi/OneDrive/Third Year/DATA301/project-group37-project/data/processed' filename='pergame.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.19e48ir1wch4zh1afwz6b1d39w8t' name='normalized.csv' table='[normalized#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='yearID' ordinal='1' />
+            <column datatype='real' name='AB' ordinal='2' />
+            <column datatype='real' name='R' ordinal='3' />
+            <column datatype='real' name='H' ordinal='4' />
+            <column datatype='real' name='2B' ordinal='5' />
+            <column datatype='real' name='3B' ordinal='6' />
+            <column datatype='real' name='HR' ordinal='7' />
+            <column datatype='real' name='RBI' ordinal='8' />
+            <column datatype='real' name='SB' ordinal='9' />
+            <column datatype='real' name='CS' ordinal='10' />
+            <column datatype='real' name='BB' ordinal='11' />
+            <column datatype='real' name='SO' ordinal='12' />
+            <column datatype='real' name='IBB' ordinal='13' />
+            <column datatype='real' name='HBP' ordinal='14' />
+            <column datatype='real' name='GIDP' ordinal='15' />
+            <column datatype='real' name='PA' ordinal='16' />
+            <column datatype='real' name='BA' ordinal='17' />
+            <column datatype='real' name='OBP' ordinal='18' />
+            <column datatype='real' name='SLG' ordinal='19' />
+            <column datatype='real' name='OPS' ordinal='20' />
+            <column datatype='integer' name='decade' ordinal='21' />
+            <column datatype='real' name='BBPG' ordinal='22' />
+            <column datatype='real' name='CG' ordinal='23' />
+            <column datatype='real' name='ER' ordinal='24' />
+            <column datatype='real' name='ERA' ordinal='25' />
+            <column datatype='real' name='IPouts' ordinal='26' />
+            <column datatype='real' name='KPG' ordinal='27' />
+            <column datatype='real' name='SHO' ordinal='28' />
+            <column datatype='real' name='SV' ordinal='29' />
+            <column datatype='real' name='WP' ordinal='30' />
+            <column datatype='real' name='BIP' ordinal='31' />
+            <column datatype='real' name='BABIP' ordinal='32' />
+            <column datatype='real' name='games' ordinal='33' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.19e48ir1wch4zh1afwz6b1d39w8t' name='pergame.csv' table='[pergame#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy' name='yearID' ordinal='1' />
+              <column datatype='real' name='AB' ordinal='2' />
+              <column datatype='real' name='R' ordinal='3' />
+              <column datatype='real' name='H' ordinal='4' />
+              <column datatype='real' name='2B' ordinal='5' />
+              <column datatype='real' name='3B' ordinal='6' />
+              <column datatype='real' name='HR' ordinal='7' />
+              <column datatype='real' name='RBI' ordinal='8' />
+              <column datatype='real' name='SB' ordinal='9' />
+              <column datatype='real' name='CS' ordinal='10' />
+              <column datatype='real' name='BB' ordinal='11' />
+              <column datatype='real' name='SO' ordinal='12' />
+              <column datatype='real' name='IBB' ordinal='13' />
+              <column datatype='real' name='HBP' ordinal='14' />
+              <column datatype='real' name='GIDP' ordinal='15' />
+              <column datatype='real' name='PA' ordinal='16' />
+              <column datatype='real' name='BA' ordinal='17' />
+              <column datatype='real' name='OBP' ordinal='18' />
+              <column datatype='real' name='SLG' ordinal='19' />
+              <column datatype='real' name='OPS' ordinal='20' />
+              <column datatype='string' date-parse-format='yyyy' name='decade' ordinal='21' />
+              <column datatype='real' name='BBPG' ordinal='22' />
+              <column datatype='real' name='CG' ordinal='23' />
+              <column datatype='real' name='ER' ordinal='24' />
+              <column datatype='real' name='ERA' ordinal='25' />
+              <column datatype='real' name='IPouts' ordinal='26' />
+              <column datatype='real' name='KPG' ordinal='27' />
+              <column datatype='real' name='SHO' ordinal='28' />
+              <column datatype='real' name='SV' ordinal='29' />
+              <column datatype='real' name='WP' ordinal='30' />
+              <column datatype='real' name='BIP' ordinal='31' />
+              <column datatype='real' name='BABIP' ordinal='32' />
+              <column datatype='real' name='games' ordinal='33' />
+            </columns>
+          </relation>
+          <relation connection='textscan.19e48ir1wch4zh1afwz6b1d39w8t' name='normalized.csv' table='[normalized#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy' name='yearID' ordinal='1' />
+              <column datatype='real' name='AB' ordinal='2' />
+              <column datatype='real' name='R' ordinal='3' />
+              <column datatype='real' name='H' ordinal='4' />
+              <column datatype='real' name='2B' ordinal='5' />
+              <column datatype='real' name='3B' ordinal='6' />
+              <column datatype='real' name='HR' ordinal='7' />
+              <column datatype='real' name='RBI' ordinal='8' />
+              <column datatype='real' name='SB' ordinal='9' />
+              <column datatype='real' name='CS' ordinal='10' />
+              <column datatype='real' name='BB' ordinal='11' />
+              <column datatype='real' name='SO' ordinal='12' />
+              <column datatype='real' name='IBB' ordinal='13' />
+              <column datatype='real' name='HBP' ordinal='14' />
+              <column datatype='real' name='GIDP' ordinal='15' />
+              <column datatype='real' name='PA' ordinal='16' />
+              <column datatype='real' name='BA' ordinal='17' />
+              <column datatype='real' name='OBP' ordinal='18' />
+              <column datatype='real' name='SLG' ordinal='19' />
+              <column datatype='real' name='OPS' ordinal='20' />
+              <column datatype='integer' name='decade' ordinal='21' />
+              <column datatype='real' name='BBPG' ordinal='22' />
+              <column datatype='real' name='CG' ordinal='23' />
+              <column datatype='real' name='ER' ordinal='24' />
+              <column datatype='real' name='ERA' ordinal='25' />
+              <column datatype='real' name='IPouts' ordinal='26' />
+              <column datatype='real' name='KPG' ordinal='27' />
+              <column datatype='real' name='SHO' ordinal='28' />
+              <column datatype='real' name='SV' ordinal='29' />
+              <column datatype='real' name='WP' ordinal='30' />
+              <column datatype='real' name='BIP' ordinal='31' />
+              <column datatype='real' name='BABIP' ordinal='32' />
+              <column datatype='real' name='games' ordinal='33' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[2B (normalized.csv)]' value='[normalized.csv].[2B]' />
+          <map key='[2B]' value='[pergame.csv].[2B]' />
+          <map key='[3B (normalized.csv)]' value='[normalized.csv].[3B]' />
+          <map key='[3B]' value='[pergame.csv].[3B]' />
+          <map key='[AB (normalized.csv)]' value='[normalized.csv].[AB]' />
+          <map key='[AB]' value='[pergame.csv].[AB]' />
+          <map key='[BA (normalized.csv)]' value='[normalized.csv].[BA]' />
+          <map key='[BABIP (normalized.csv)]' value='[normalized.csv].[BABIP]' />
+          <map key='[BABIP]' value='[pergame.csv].[BABIP]' />
+          <map key='[BA]' value='[pergame.csv].[BA]' />
+          <map key='[BB (normalized.csv)]' value='[normalized.csv].[BB]' />
+          <map key='[BBPG (normalized.csv)]' value='[normalized.csv].[BBPG]' />
+          <map key='[BBPG]' value='[pergame.csv].[BBPG]' />
+          <map key='[BB]' value='[pergame.csv].[BB]' />
+          <map key='[BIP (normalized.csv)]' value='[normalized.csv].[BIP]' />
+          <map key='[BIP]' value='[pergame.csv].[BIP]' />
+          <map key='[CG (normalized.csv)]' value='[normalized.csv].[CG]' />
+          <map key='[CG]' value='[pergame.csv].[CG]' />
+          <map key='[CS (normalized.csv)]' value='[normalized.csv].[CS]' />
+          <map key='[CS]' value='[pergame.csv].[CS]' />
+          <map key='[ER (normalized.csv)]' value='[normalized.csv].[ER]' />
+          <map key='[ERA (normalized.csv)]' value='[normalized.csv].[ERA]' />
+          <map key='[ERA]' value='[pergame.csv].[ERA]' />
+          <map key='[ER]' value='[pergame.csv].[ER]' />
+          <map key='[F1 (normalized.csv)]' value='[normalized.csv].[F1]' />
+          <map key='[F1]' value='[pergame.csv].[F1]' />
+          <map key='[GIDP (normalized.csv)]' value='[normalized.csv].[GIDP]' />
+          <map key='[GIDP]' value='[pergame.csv].[GIDP]' />
+          <map key='[H (normalized.csv)]' value='[normalized.csv].[H]' />
+          <map key='[HBP (normalized.csv)]' value='[normalized.csv].[HBP]' />
+          <map key='[HBP]' value='[pergame.csv].[HBP]' />
+          <map key='[HR (normalized.csv)]' value='[normalized.csv].[HR]' />
+          <map key='[HR]' value='[pergame.csv].[HR]' />
+          <map key='[H]' value='[pergame.csv].[H]' />
+          <map key='[IBB (normalized.csv)]' value='[normalized.csv].[IBB]' />
+          <map key='[IBB]' value='[pergame.csv].[IBB]' />
+          <map key='[IPouts (normalized.csv)]' value='[normalized.csv].[IPouts]' />
+          <map key='[IPouts]' value='[pergame.csv].[IPouts]' />
+          <map key='[KPG (normalized.csv)]' value='[normalized.csv].[KPG]' />
+          <map key='[KPG]' value='[pergame.csv].[KPG]' />
+          <map key='[OBP (normalized.csv)]' value='[normalized.csv].[OBP]' />
+          <map key='[OBP]' value='[pergame.csv].[OBP]' />
+          <map key='[OPS (normalized.csv)]' value='[normalized.csv].[OPS]' />
+          <map key='[OPS]' value='[pergame.csv].[OPS]' />
+          <map key='[PA (normalized.csv)]' value='[normalized.csv].[PA]' />
+          <map key='[PA]' value='[pergame.csv].[PA]' />
+          <map key='[R (normalized.csv)]' value='[normalized.csv].[R]' />
+          <map key='[RBI (normalized.csv)]' value='[normalized.csv].[RBI]' />
+          <map key='[RBI]' value='[pergame.csv].[RBI]' />
+          <map key='[R]' value='[pergame.csv].[R]' />
+          <map key='[SB (normalized.csv)]' value='[normalized.csv].[SB]' />
+          <map key='[SB]' value='[pergame.csv].[SB]' />
+          <map key='[SHO (normalized.csv)]' value='[normalized.csv].[SHO]' />
+          <map key='[SHO]' value='[pergame.csv].[SHO]' />
+          <map key='[SLG (normalized.csv)]' value='[normalized.csv].[SLG]' />
+          <map key='[SLG]' value='[pergame.csv].[SLG]' />
+          <map key='[SO (normalized.csv)]' value='[normalized.csv].[SO]' />
+          <map key='[SO]' value='[pergame.csv].[SO]' />
+          <map key='[SV (normalized.csv)]' value='[normalized.csv].[SV]' />
+          <map key='[SV]' value='[pergame.csv].[SV]' />
+          <map key='[WP (normalized.csv)]' value='[normalized.csv].[WP]' />
+          <map key='[WP]' value='[pergame.csv].[WP]' />
+          <map key='[decade (normalized.csv)]' value='[normalized.csv].[decade]' />
+          <map key='[decade]' value='[pergame.csv].[decade]' />
+          <map key='[games (normalized.csv)]' value='[normalized.csv].[games]' />
+          <map key='[games]' value='[pergame.csv].[games]' />
+          <map key='[yearID (normalized.csv)]' value='[normalized.csv].[yearID]' />
+          <map key='[yearID]' value='[pergame.csv].[yearID]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yearID</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[yearID]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>yearID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AB]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>AB</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[R]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>R</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>H</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[H]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>H</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2B]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>2B</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3B]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>3B</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HR]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>HR</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RBI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RBI]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>RBI</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SB]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>SB</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CS]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>CS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BB]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>BB</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SO]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>SO</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IBB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IBB]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>IBB</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBP]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>HBP</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GIDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GIDP]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>GIDP</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PA]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>PA</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BA]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>BA</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OBP]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>OBP</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SLG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SLG]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>SLG</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPS]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>OPS</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>decade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[decade]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>decade</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BBPG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BBPG]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>BBPG</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CG]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>CG</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ER</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ER]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>ER</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ERA]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>ERA</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IPouts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IPouts]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>IPouts</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[KPG]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>KPG</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SHO]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>SHO</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SV]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>SV</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WP]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>WP</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BIP]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>BIP</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BABIP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BABIP]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>BABIP</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[games]</local-name>
+            <parent-name>[pergame.csv]</parent-name>
+            <remote-alias>games</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pergame.csv_27C3C7667AB347D28584783038EE7FBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yearID</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[yearID (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>yearID</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AB (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>AB</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[R (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>R</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>H</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[H (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>H</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2B (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>2B</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3B (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>3B</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HR (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>HR</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RBI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RBI (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>RBI</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SB (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>SB</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CS (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>CS</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BB (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>BB</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SO (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>SO</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IBB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IBB (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>IBB</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBP (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>HBP</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GIDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GIDP (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>GIDP</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PA (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>PA</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BA (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>BA</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OBP (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>OBP</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SLG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SLG (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>SLG</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPS (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>OPS</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>decade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[decade (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>decade</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BBPG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BBPG (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>BBPG</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CG (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>CG</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ER</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ER (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>ER</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ERA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ERA (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>ERA</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IPouts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IPouts (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>IPouts</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KPG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[KPG (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>KPG</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SHO (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>SHO</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SV (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>SV</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WP (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>WP</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BIP (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>BIP</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BABIP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BABIP (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>BABIP</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[games (normalized.csv)]</local-name>
+            <parent-name>[normalized.csv]</parent-name>
+            <remote-alias>games</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized.csv_63169EEA7BE649C8A4460850A54379B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:BA (normalized.csv):qk]&quot;' value='BA' />
+          <alias key='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;' value='ERA' />
+          <alias key='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:OPS (normalized.csv):qk]&quot;' value='OPS' />
+        </aliases>
+      </column>
+      <column datatype='real' name='[BA (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[BABIP (normalized.csv)]' role='measure' type='quantitative' />
+      <column caption='Babip' datatype='real' name='[BABIP]' role='measure' type='quantitative' />
+      <column datatype='real' name='[BB (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[BBPG (normalized.csv)]' role='measure' type='quantitative' />
+      <column caption='Bbpg' datatype='real' name='[BBPG]' role='measure' type='quantitative' />
+      <column datatype='real' name='[BB]' role='measure' type='quantitative' />
+      <column datatype='real' name='[BIP]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CG (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[ER (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[ERA (normalized.csv)]' role='measure' type='quantitative' />
+      <column caption='Gidp' datatype='real' name='[GIDP]' role='measure' type='quantitative' />
+      <column datatype='real' name='[HR (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[HR]' role='measure' type='quantitative' />
+      <column caption='I Pouts' datatype='real' name='[IPouts]' role='measure' type='quantitative' />
+      <column datatype='real' name='[KPG (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[OBP (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[OPS (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[R]' role='measure' type='quantitative' />
+      <column datatype='real' name='[SLG (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[SO (normalized.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[SO]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='normalized.csv' datatype='table' name='[__tableau_internal_object_id__].[normalized.csv_63169EEA7BE649C8A4460850A54379B6]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='pergame.csv' datatype='table' name='[__tableau_internal_object_id__].[pergame.csv_27C3C7667AB347D28584783038EE7FBF]' role='measure' type='quantitative' />
+      <column caption='Decade (Normalized.Csv)' datatype='integer' name='[decade (normalized.csv)]' role='measure' type='quantitative' />
+      <column caption='Decade' datatype='string' name='[decade]' role='dimension' type='nominal' />
+      <column caption='Games (Normalized.Csv)' datatype='real' name='[games (normalized.csv)]' role='measure' type='quantitative' />
+      <column caption='Games' datatype='real' name='[games]' role='measure' type='quantitative' />
+      <column datatype='string' name='[yearID (normalized.csv) (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[yearID (normalized.csv)]' new-bin='true'>
+          <bin default-name='false' value='&quot;Analyics Era&quot;'>
+            <value>#2006-01-01#</value>
+            <value>#2007-01-01#</value>
+            <value>#2008-01-01#</value>
+            <value>#2009-01-01#</value>
+            <value>#2010-01-01#</value>
+            <value>#2011-01-01#</value>
+            <value>#2012-01-01#</value>
+            <value>#2013-01-01#</value>
+            <value>#2014-01-01#</value>
+            <value>#2015-01-01#</value>
+            <value>#2016-01-01#</value>
+            <value>#2017-01-01#</value>
+            <value>#2018-01-01#</value>
+            <value>#2019-01-01#</value>
+            <value>#2020-01-01#</value>
+          </bin>
+          <bin default-name='false' value='&quot;Dead Ball Era&quot;'>
+            <value>#1901-01-01#</value>
+            <value>#1902-01-01#</value>
+            <value>#1903-01-01#</value>
+            <value>#1904-01-01#</value>
+            <value>#1905-01-01#</value>
+            <value>#1906-01-01#</value>
+            <value>#1907-01-01#</value>
+            <value>#1908-01-01#</value>
+            <value>#1909-01-01#</value>
+            <value>#1910-01-01#</value>
+            <value>#1911-01-01#</value>
+            <value>#1912-01-01#</value>
+            <value>#1913-01-01#</value>
+            <value>#1914-01-01#</value>
+            <value>#1915-01-01#</value>
+            <value>#1916-01-01#</value>
+            <value>#1917-01-01#</value>
+            <value>#1918-01-01#</value>
+            <value>#1919-01-01#</value>
+          </bin>
+          <bin default-name='false' value='&quot;Expansion Era&quot;'>
+            <value>#1961-01-01#</value>
+            <value>#1962-01-01#</value>
+            <value>#1963-01-01#</value>
+            <value>#1964-01-01#</value>
+            <value>#1965-01-01#</value>
+            <value>#1966-01-01#</value>
+            <value>#1967-01-01#</value>
+            <value>#1968-01-01#</value>
+            <value>#1969-01-01#</value>
+            <value>#1970-01-01#</value>
+            <value>#1971-01-01#</value>
+            <value>#1972-01-01#</value>
+            <value>#1973-01-01#</value>
+            <value>#1974-01-01#</value>
+            <value>#1975-01-01#</value>
+            <value>#1976-01-01#</value>
+          </bin>
+          <bin default-name='false' value='&quot;Free Agency Era&quot;'>
+            <value>#1977-01-01#</value>
+            <value>#1978-01-01#</value>
+            <value>#1979-01-01#</value>
+            <value>#1980-01-01#</value>
+            <value>#1981-01-01#</value>
+            <value>#1982-01-01#</value>
+            <value>#1983-01-01#</value>
+            <value>#1984-01-01#</value>
+            <value>#1985-01-01#</value>
+            <value>#1986-01-01#</value>
+            <value>#1987-01-01#</value>
+            <value>#1988-01-01#</value>
+            <value>#1989-01-01#</value>
+            <value>#1990-01-01#</value>
+            <value>#1991-01-01#</value>
+            <value>#1992-01-01#</value>
+            <value>#1993-01-01#</value>
+          </bin>
+          <bin default-name='false' value='&quot;Integration Era&quot;'>
+            <value>#1942-01-01#</value>
+            <value>#1943-01-01#</value>
+            <value>#1944-01-01#</value>
+            <value>#1945-01-01#</value>
+            <value>#1946-01-01#</value>
+            <value>#1947-01-01#</value>
+            <value>#1948-01-01#</value>
+            <value>#1949-01-01#</value>
+            <value>#1950-01-01#</value>
+            <value>#1951-01-01#</value>
+            <value>#1952-01-01#</value>
+            <value>#1953-01-01#</value>
+            <value>#1954-01-01#</value>
+            <value>#1955-01-01#</value>
+            <value>#1956-01-01#</value>
+            <value>#1957-01-01#</value>
+            <value>#1958-01-01#</value>
+            <value>#1959-01-01#</value>
+            <value>#1960-01-01#</value>
+          </bin>
+          <bin default-name='false' value='&quot;Live Ball Era&quot;'>
+            <value>#1920-01-01#</value>
+            <value>#1921-01-01#</value>
+            <value>#1922-01-01#</value>
+            <value>#1923-01-01#</value>
+            <value>#1924-01-01#</value>
+            <value>#1925-01-01#</value>
+            <value>#1926-01-01#</value>
+            <value>#1927-01-01#</value>
+            <value>#1928-01-01#</value>
+            <value>#1929-01-01#</value>
+            <value>#1930-01-01#</value>
+            <value>#1931-01-01#</value>
+            <value>#1932-01-01#</value>
+            <value>#1933-01-01#</value>
+            <value>#1934-01-01#</value>
+            <value>#1935-01-01#</value>
+            <value>#1936-01-01#</value>
+            <value>#1937-01-01#</value>
+            <value>#1938-01-01#</value>
+            <value>#1939-01-01#</value>
+            <value>#1940-01-01#</value>
+            <value>#1941-01-01#</value>
+          </bin>
+          <bin default-name='false' value='&quot;Pre-1900&quot;'>
+            <value>#1871-01-01#</value>
+            <value>#1872-01-01#</value>
+            <value>#1873-01-01#</value>
+            <value>#1874-01-01#</value>
+            <value>#1875-01-01#</value>
+            <value>#1876-01-01#</value>
+            <value>#1877-01-01#</value>
+            <value>#1878-01-01#</value>
+            <value>#1879-01-01#</value>
+            <value>#1880-01-01#</value>
+            <value>#1881-01-01#</value>
+            <value>#1882-01-01#</value>
+            <value>#1883-01-01#</value>
+            <value>#1884-01-01#</value>
+            <value>#1885-01-01#</value>
+            <value>#1886-01-01#</value>
+            <value>#1887-01-01#</value>
+            <value>#1888-01-01#</value>
+            <value>#1889-01-01#</value>
+            <value>#1890-01-01#</value>
+            <value>#1891-01-01#</value>
+            <value>#1892-01-01#</value>
+            <value>#1893-01-01#</value>
+            <value>#1894-01-01#</value>
+            <value>#1895-01-01#</value>
+            <value>#1896-01-01#</value>
+            <value>#1897-01-01#</value>
+            <value>#1898-01-01#</value>
+            <value>#1899-01-01#</value>
+          </bin>
+          <bin default-name='false' value='&quot;Steroid Era&quot;'>
+            <value>#1994-01-01#</value>
+            <value>#1995-01-01#</value>
+            <value>#1996-01-01#</value>
+            <value>#1997-01-01#</value>
+            <value>#1998-01-01#</value>
+            <value>#1999-01-01#</value>
+            <value>#2000-01-01#</value>
+            <value>#2001-01-01#</value>
+            <value>#2002-01-01#</value>
+            <value>#2003-01-01#</value>
+            <value>#2004-01-01#</value>
+            <value>#2005-01-01#</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='date' name='[yearID (normalized.csv)]' role='dimension' type='ordinal' />
+      <column caption='Year ID' datatype='date' name='[yearID]' role='dimension' type='ordinal' />
+      <column-instance column='[BA (normalized.csv)]' derivation='Avg' name='[avg:BA (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ERA (normalized.csv)]' derivation='Avg' name='[avg:ERA (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OPS (normalized.csv)]' derivation='Avg' name='[avg:OPS (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BA (normalized.csv)]' derivation='Sum' name='[sum:BA (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BABIP (normalized.csv)]' derivation='Sum' name='[sum:BABIP (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BB (normalized.csv)]' derivation='Sum' name='[sum:BB (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BB]' derivation='Sum' name='[sum:BB:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BBPG (normalized.csv)]' derivation='Sum' name='[sum:BBPG (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BIP]' derivation='Sum' name='[sum:BIP:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CG (normalized.csv)]' derivation='Sum' name='[sum:CG (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ER (normalized.csv)]' derivation='Sum' name='[sum:ER (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ERA (normalized.csv)]' derivation='Sum' name='[sum:ERA (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HR (normalized.csv)]' derivation='Sum' name='[sum:HR (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HR]' derivation='Sum' name='[sum:HR:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[KPG (normalized.csv)]' derivation='Sum' name='[sum:KPG (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OBP (normalized.csv)]' derivation='Sum' name='[sum:OBP (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OPS (normalized.csv)]' derivation='Sum' name='[sum:OPS (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[R]' derivation='Sum' name='[sum:R:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SLG (normalized.csv)]' derivation='Sum' name='[sum:SLG (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SO (normalized.csv)]' derivation='Sum' name='[sum:SO (normalized.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SO]' derivation='Sum' name='[sum:SO:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[yearID (normalized.csv)]' derivation='Year-Trunc' name='[tyr:yearID (normalized.csv):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[yearID (normalized.csv)]' derivation='Year' name='[yr:yearID (normalized.csv):ok]' pivot='key' type='ordinal' />
+      <group caption='Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv))) 1' hidden='true' name='[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv))) 1]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yearID (normalized.csv) (group)]' />
+          <groupfilter function='level-members' level='[yr:yearID (normalized.csv):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv)))' hidden='true' name='[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv)))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yearID (normalized.csv) (group)]' />
+          <groupfilter function='level-members' level='[tyr:yearID (normalized.csv):ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='150' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yearID (normalized.csv) (group)]&#10;[:Measure Names]' type='palette'>
+            <map to='#308344'>
+              <multibucket>
+                <bucket>&quot;Integration Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#308344'>
+              <multibucket>
+                <bucket>&quot;Integration Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#419eb6'>
+              <multibucket>
+                <bucket>&quot;Free Agency Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#419eb6'>
+              <multibucket>
+                <bucket>&quot;Free Agency Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;Analyics Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;Analyics Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#8ed07f'>
+              <multibucket>
+                <bucket>&quot;Integration Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:KPG (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#a0cbe8'>
+              <multibucket>
+                <bucket>&quot;Analyics Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:KPG (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bce4d8'>
+              <multibucket>
+                <bucket>&quot;Free Agency Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:KPG (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ca223c'>
+              <multibucket>
+                <bucket>&quot;Expansion Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ca223c'>
+              <multibucket>
+                <bucket>&quot;Expansion Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e96b20'>
+              <multibucket>
+                <bucket>&quot;Dead Ball Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e96b20'>
+              <multibucket>
+                <bucket>&quot;Dead Ball Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ec5049'>
+              <multibucket>
+                <bucket>&quot;Expansion Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:KPG (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f0bd27'>
+              <multibucket>
+                <bucket>&quot;Live Ball Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f0bd27'>
+              <multibucket>
+                <bucket>&quot;Live Ball Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f59c3c'>
+              <multibucket>
+                <bucket>&quot;Dead Ball Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:KPG (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f64971'>
+              <multibucket>
+                <bucket>&quot;Steroid Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f64971'>
+              <multibucket>
+                <bucket>&quot;Steroid Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#fc719e'>
+              <multibucket>
+                <bucket>&quot;Steroid Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:KPG (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ffda66'>
+              <multibucket>
+                <bucket>&quot;Live Ball Era&quot;</bucket>
+                <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:KPG (normalized.csv):qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yearID (normalized.csv) (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Analyics Era&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Integration Era&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Free Agency Era&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pre-1900&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Expansion Era&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Live Ball Era&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dead Ball Era&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Steroid Era&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau10_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:SO:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BABIP (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:CG (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:HR (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:KPG (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:SLG (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OBP (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BB (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BIP:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ER (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:HR:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:BA (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BA (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BBPG (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:R:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:SO (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:OPS (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OPS (normalized.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BB:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='normalized.csv' id='normalized.csv_63169EEA7BE649C8A4460850A54379B6'>
+            <properties context=''>
+              <relation connection='textscan.19e48ir1wch4zh1afwz6b1d39w8t' name='normalized.csv' table='[normalized#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='yearID' ordinal='1' />
+                  <column datatype='real' name='AB' ordinal='2' />
+                  <column datatype='real' name='R' ordinal='3' />
+                  <column datatype='real' name='H' ordinal='4' />
+                  <column datatype='real' name='2B' ordinal='5' />
+                  <column datatype='real' name='3B' ordinal='6' />
+                  <column datatype='real' name='HR' ordinal='7' />
+                  <column datatype='real' name='RBI' ordinal='8' />
+                  <column datatype='real' name='SB' ordinal='9' />
+                  <column datatype='real' name='CS' ordinal='10' />
+                  <column datatype='real' name='BB' ordinal='11' />
+                  <column datatype='real' name='SO' ordinal='12' />
+                  <column datatype='real' name='IBB' ordinal='13' />
+                  <column datatype='real' name='HBP' ordinal='14' />
+                  <column datatype='real' name='GIDP' ordinal='15' />
+                  <column datatype='real' name='PA' ordinal='16' />
+                  <column datatype='real' name='BA' ordinal='17' />
+                  <column datatype='real' name='OBP' ordinal='18' />
+                  <column datatype='real' name='SLG' ordinal='19' />
+                  <column datatype='real' name='OPS' ordinal='20' />
+                  <column datatype='integer' name='decade' ordinal='21' />
+                  <column datatype='real' name='BBPG' ordinal='22' />
+                  <column datatype='real' name='CG' ordinal='23' />
+                  <column datatype='real' name='ER' ordinal='24' />
+                  <column datatype='real' name='ERA' ordinal='25' />
+                  <column datatype='real' name='IPouts' ordinal='26' />
+                  <column datatype='real' name='KPG' ordinal='27' />
+                  <column datatype='real' name='SHO' ordinal='28' />
+                  <column datatype='real' name='SV' ordinal='29' />
+                  <column datatype='real' name='WP' ordinal='30' />
+                  <column datatype='real' name='BIP' ordinal='31' />
+                  <column datatype='real' name='BABIP' ordinal='32' />
+                  <column datatype='real' name='games' ordinal='33' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='pergame.csv' id='pergame.csv_27C3C7667AB347D28584783038EE7FBF'>
+            <properties context=''>
+              <relation connection='textscan.19e48ir1wch4zh1afwz6b1d39w8t' name='pergame.csv' table='[pergame#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='yearID' ordinal='1' />
+                  <column datatype='real' name='AB' ordinal='2' />
+                  <column datatype='real' name='R' ordinal='3' />
+                  <column datatype='real' name='H' ordinal='4' />
+                  <column datatype='real' name='2B' ordinal='5' />
+                  <column datatype='real' name='3B' ordinal='6' />
+                  <column datatype='real' name='HR' ordinal='7' />
+                  <column datatype='real' name='RBI' ordinal='8' />
+                  <column datatype='real' name='SB' ordinal='9' />
+                  <column datatype='real' name='CS' ordinal='10' />
+                  <column datatype='real' name='BB' ordinal='11' />
+                  <column datatype='real' name='SO' ordinal='12' />
+                  <column datatype='real' name='IBB' ordinal='13' />
+                  <column datatype='real' name='HBP' ordinal='14' />
+                  <column datatype='real' name='GIDP' ordinal='15' />
+                  <column datatype='real' name='PA' ordinal='16' />
+                  <column datatype='real' name='BA' ordinal='17' />
+                  <column datatype='real' name='OBP' ordinal='18' />
+                  <column datatype='real' name='SLG' ordinal='19' />
+                  <column datatype='real' name='OPS' ordinal='20' />
+                  <column datatype='string' date-parse-format='yyyy' name='decade' ordinal='21' />
+                  <column datatype='real' name='BBPG' ordinal='22' />
+                  <column datatype='real' name='CG' ordinal='23' />
+                  <column datatype='real' name='ER' ordinal='24' />
+                  <column datatype='real' name='ERA' ordinal='25' />
+                  <column datatype='real' name='IPouts' ordinal='26' />
+                  <column datatype='real' name='KPG' ordinal='27' />
+                  <column datatype='real' name='SHO' ordinal='28' />
+                  <column datatype='real' name='SV' ordinal='29' />
+                  <column datatype='real' name='WP' ordinal='30' />
+                  <column datatype='real' name='BIP' ordinal='31' />
+                  <column datatype='real' name='BABIP' ordinal='32' />
+                  <column datatype='real' name='games' ordinal='33' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[yearID]' />
+              <expression op='[yearID (normalized.csv)]' />
+            </expression>
+            <first-end-point object-id='pergame.csv_27C3C7667AB347D28584783038EE7FBF' />
+            <second-end-point object-id='normalized.csv_63169EEA7BE649C8A4460850A54379B6' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_0C0EB9B84D2D41ABB0658288653C6B66]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Sheet 4' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_E5D52AB726D842EE9A342411E3B97C5F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 5' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Sheet 4' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_B0C311BC61F94E5393ED92E2E10AF8B1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Sheet 4' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated)' name='[Action4_661E83BB957D48639A9D9232549BE536]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='yearID (normalized.csv) (group)' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Runs per Game</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pergame+' name='federated.1jlut6n0wdzzf71bt60z606zq92g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jlut6n0wdzzf71bt60z606zq92g'>
+            <column datatype='real' name='[R]' role='measure' type='quantitative' />
+            <column-instance column='[R]' derivation='Avg' name='[avg:R:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yearID (normalized.csv)]' derivation='Year-Trunc' name='[tyr:yearID (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[yearID (normalized.csv) (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[yearID (normalized.csv)]' new-bin='true'>
+                <bin default-name='false' value='&quot;Analyics Era&quot;'>
+                  <value>#2006-01-01#</value>
+                  <value>#2007-01-01#</value>
+                  <value>#2008-01-01#</value>
+                  <value>#2009-01-01#</value>
+                  <value>#2010-01-01#</value>
+                  <value>#2011-01-01#</value>
+                  <value>#2012-01-01#</value>
+                  <value>#2013-01-01#</value>
+                  <value>#2014-01-01#</value>
+                  <value>#2015-01-01#</value>
+                  <value>#2016-01-01#</value>
+                  <value>#2017-01-01#</value>
+                  <value>#2018-01-01#</value>
+                  <value>#2019-01-01#</value>
+                  <value>#2020-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Dead Ball Era&quot;'>
+                  <value>#1901-01-01#</value>
+                  <value>#1902-01-01#</value>
+                  <value>#1903-01-01#</value>
+                  <value>#1904-01-01#</value>
+                  <value>#1905-01-01#</value>
+                  <value>#1906-01-01#</value>
+                  <value>#1907-01-01#</value>
+                  <value>#1908-01-01#</value>
+                  <value>#1909-01-01#</value>
+                  <value>#1910-01-01#</value>
+                  <value>#1911-01-01#</value>
+                  <value>#1912-01-01#</value>
+                  <value>#1913-01-01#</value>
+                  <value>#1914-01-01#</value>
+                  <value>#1915-01-01#</value>
+                  <value>#1916-01-01#</value>
+                  <value>#1917-01-01#</value>
+                  <value>#1918-01-01#</value>
+                  <value>#1919-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Expansion Era&quot;'>
+                  <value>#1961-01-01#</value>
+                  <value>#1962-01-01#</value>
+                  <value>#1963-01-01#</value>
+                  <value>#1964-01-01#</value>
+                  <value>#1965-01-01#</value>
+                  <value>#1966-01-01#</value>
+                  <value>#1967-01-01#</value>
+                  <value>#1968-01-01#</value>
+                  <value>#1969-01-01#</value>
+                  <value>#1970-01-01#</value>
+                  <value>#1971-01-01#</value>
+                  <value>#1972-01-01#</value>
+                  <value>#1973-01-01#</value>
+                  <value>#1974-01-01#</value>
+                  <value>#1975-01-01#</value>
+                  <value>#1976-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Free Agency Era&quot;'>
+                  <value>#1977-01-01#</value>
+                  <value>#1978-01-01#</value>
+                  <value>#1979-01-01#</value>
+                  <value>#1980-01-01#</value>
+                  <value>#1981-01-01#</value>
+                  <value>#1982-01-01#</value>
+                  <value>#1983-01-01#</value>
+                  <value>#1984-01-01#</value>
+                  <value>#1985-01-01#</value>
+                  <value>#1986-01-01#</value>
+                  <value>#1987-01-01#</value>
+                  <value>#1988-01-01#</value>
+                  <value>#1989-01-01#</value>
+                  <value>#1990-01-01#</value>
+                  <value>#1991-01-01#</value>
+                  <value>#1992-01-01#</value>
+                  <value>#1993-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Integration Era&quot;'>
+                  <value>#1942-01-01#</value>
+                  <value>#1943-01-01#</value>
+                  <value>#1944-01-01#</value>
+                  <value>#1945-01-01#</value>
+                  <value>#1946-01-01#</value>
+                  <value>#1947-01-01#</value>
+                  <value>#1948-01-01#</value>
+                  <value>#1949-01-01#</value>
+                  <value>#1950-01-01#</value>
+                  <value>#1951-01-01#</value>
+                  <value>#1952-01-01#</value>
+                  <value>#1953-01-01#</value>
+                  <value>#1954-01-01#</value>
+                  <value>#1955-01-01#</value>
+                  <value>#1956-01-01#</value>
+                  <value>#1957-01-01#</value>
+                  <value>#1958-01-01#</value>
+                  <value>#1959-01-01#</value>
+                  <value>#1960-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Live Ball Era&quot;'>
+                  <value>#1920-01-01#</value>
+                  <value>#1921-01-01#</value>
+                  <value>#1922-01-01#</value>
+                  <value>#1923-01-01#</value>
+                  <value>#1924-01-01#</value>
+                  <value>#1925-01-01#</value>
+                  <value>#1926-01-01#</value>
+                  <value>#1927-01-01#</value>
+                  <value>#1928-01-01#</value>
+                  <value>#1929-01-01#</value>
+                  <value>#1930-01-01#</value>
+                  <value>#1931-01-01#</value>
+                  <value>#1932-01-01#</value>
+                  <value>#1933-01-01#</value>
+                  <value>#1934-01-01#</value>
+                  <value>#1935-01-01#</value>
+                  <value>#1936-01-01#</value>
+                  <value>#1937-01-01#</value>
+                  <value>#1938-01-01#</value>
+                  <value>#1939-01-01#</value>
+                  <value>#1940-01-01#</value>
+                  <value>#1941-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Pre-1900&quot;'>
+                  <value>#1871-01-01#</value>
+                  <value>#1872-01-01#</value>
+                  <value>#1873-01-01#</value>
+                  <value>#1874-01-01#</value>
+                  <value>#1875-01-01#</value>
+                  <value>#1876-01-01#</value>
+                  <value>#1877-01-01#</value>
+                  <value>#1878-01-01#</value>
+                  <value>#1879-01-01#</value>
+                  <value>#1880-01-01#</value>
+                  <value>#1881-01-01#</value>
+                  <value>#1882-01-01#</value>
+                  <value>#1883-01-01#</value>
+                  <value>#1884-01-01#</value>
+                  <value>#1885-01-01#</value>
+                  <value>#1886-01-01#</value>
+                  <value>#1887-01-01#</value>
+                  <value>#1888-01-01#</value>
+                  <value>#1889-01-01#</value>
+                  <value>#1890-01-01#</value>
+                  <value>#1891-01-01#</value>
+                  <value>#1892-01-01#</value>
+                  <value>#1893-01-01#</value>
+                  <value>#1894-01-01#</value>
+                  <value>#1895-01-01#</value>
+                  <value>#1896-01-01#</value>
+                  <value>#1897-01-01#</value>
+                  <value>#1898-01-01#</value>
+                  <value>#1899-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Steroid Era&quot;'>
+                  <value>#1994-01-01#</value>
+                  <value>#1995-01-01#</value>
+                  <value>#1996-01-01#</value>
+                  <value>#1997-01-01#</value>
+                  <value>#1998-01-01#</value>
+                  <value>#1999-01-01#</value>
+                  <value>#2000-01-01#</value>
+                  <value>#2001-01-01#</value>
+                  <value>#2002-01-01#</value>
+                  <value>#2003-01-01#</value>
+                  <value>#2004-01-01#</value>
+                  <value>#2005-01-01#</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='date' name='[yearID (normalized.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[yearID (normalized.csv)]' derivation='Year' name='[yr:yearID (normalized.csv):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv))) 1]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_B0C311BC61F94E5393ED92E2E10AF8B1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yearID (normalized.csv) (group)]' />
+              <groupfilter function='level-members' level='[yr:yearID (normalized.csv):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Analyics Era&quot;' function='range' level='[yearID (normalized.csv) (group)]' to='&quot;Live Ball Era&quot;' />
+              <groupfilter function='member' level='[yearID (normalized.csv) (group)]' member='&quot;Steroid Era&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]</column>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv))) 1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:R:qk]' scope='rows' value='Runs' />
+            <format attr='title' class='0' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[tyr:yearID (normalized.csv):qk]' scope='cols' value='Year' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:R:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' value='Baseball Eras'>
+              <formatted-text>
+                <run>Baseball Eras</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:R:qk]</rows>
+        <cols>[federated.1jlut6n0wdzzf71bt60z606zq92g].[tyr:yearID (normalized.csv):qk]</cols>
+      </table>
+      <simple-id uuid='{C3237073-090B-4ED7-91F9-FA22C25F92EC}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>ERA, OPS, and BIP</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pergame+' name='federated.1jlut6n0wdzzf71bt60z606zq92g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jlut6n0wdzzf71bt60z606zq92g'>
+            <column datatype='real' name='[BIP]' role='measure' type='quantitative' />
+            <column datatype='real' name='[ERA (normalized.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[ERA]' role='measure' type='quantitative' />
+            <column datatype='real' name='[OPS (normalized.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[BIP]' derivation='Sum' name='[sum:BIP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ERA (normalized.csv)]' derivation='Sum' name='[sum:ERA (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ERA]' derivation='Sum' name='[sum:ERA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[OPS (normalized.csv)]' derivation='Sum' name='[sum:OPS (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yearID (normalized.csv)]' derivation='Year-Trunc' name='[tyr:yearID (normalized.csv):ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[yearID (normalized.csv) (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[yearID (normalized.csv)]' new-bin='true'>
+                <bin default-name='false' value='&quot;Analyics Era&quot;'>
+                  <value>#2006-01-01#</value>
+                  <value>#2007-01-01#</value>
+                  <value>#2008-01-01#</value>
+                  <value>#2009-01-01#</value>
+                  <value>#2010-01-01#</value>
+                  <value>#2011-01-01#</value>
+                  <value>#2012-01-01#</value>
+                  <value>#2013-01-01#</value>
+                  <value>#2014-01-01#</value>
+                  <value>#2015-01-01#</value>
+                  <value>#2016-01-01#</value>
+                  <value>#2017-01-01#</value>
+                  <value>#2018-01-01#</value>
+                  <value>#2019-01-01#</value>
+                  <value>#2020-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Dead Ball Era&quot;'>
+                  <value>#1901-01-01#</value>
+                  <value>#1902-01-01#</value>
+                  <value>#1903-01-01#</value>
+                  <value>#1904-01-01#</value>
+                  <value>#1905-01-01#</value>
+                  <value>#1906-01-01#</value>
+                  <value>#1907-01-01#</value>
+                  <value>#1908-01-01#</value>
+                  <value>#1909-01-01#</value>
+                  <value>#1910-01-01#</value>
+                  <value>#1911-01-01#</value>
+                  <value>#1912-01-01#</value>
+                  <value>#1913-01-01#</value>
+                  <value>#1914-01-01#</value>
+                  <value>#1915-01-01#</value>
+                  <value>#1916-01-01#</value>
+                  <value>#1917-01-01#</value>
+                  <value>#1918-01-01#</value>
+                  <value>#1919-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Expansion Era&quot;'>
+                  <value>#1961-01-01#</value>
+                  <value>#1962-01-01#</value>
+                  <value>#1963-01-01#</value>
+                  <value>#1964-01-01#</value>
+                  <value>#1965-01-01#</value>
+                  <value>#1966-01-01#</value>
+                  <value>#1967-01-01#</value>
+                  <value>#1968-01-01#</value>
+                  <value>#1969-01-01#</value>
+                  <value>#1970-01-01#</value>
+                  <value>#1971-01-01#</value>
+                  <value>#1972-01-01#</value>
+                  <value>#1973-01-01#</value>
+                  <value>#1974-01-01#</value>
+                  <value>#1975-01-01#</value>
+                  <value>#1976-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Free Agency Era&quot;'>
+                  <value>#1977-01-01#</value>
+                  <value>#1978-01-01#</value>
+                  <value>#1979-01-01#</value>
+                  <value>#1980-01-01#</value>
+                  <value>#1981-01-01#</value>
+                  <value>#1982-01-01#</value>
+                  <value>#1983-01-01#</value>
+                  <value>#1984-01-01#</value>
+                  <value>#1985-01-01#</value>
+                  <value>#1986-01-01#</value>
+                  <value>#1987-01-01#</value>
+                  <value>#1988-01-01#</value>
+                  <value>#1989-01-01#</value>
+                  <value>#1990-01-01#</value>
+                  <value>#1991-01-01#</value>
+                  <value>#1992-01-01#</value>
+                  <value>#1993-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Integration Era&quot;'>
+                  <value>#1942-01-01#</value>
+                  <value>#1943-01-01#</value>
+                  <value>#1944-01-01#</value>
+                  <value>#1945-01-01#</value>
+                  <value>#1946-01-01#</value>
+                  <value>#1947-01-01#</value>
+                  <value>#1948-01-01#</value>
+                  <value>#1949-01-01#</value>
+                  <value>#1950-01-01#</value>
+                  <value>#1951-01-01#</value>
+                  <value>#1952-01-01#</value>
+                  <value>#1953-01-01#</value>
+                  <value>#1954-01-01#</value>
+                  <value>#1955-01-01#</value>
+                  <value>#1956-01-01#</value>
+                  <value>#1957-01-01#</value>
+                  <value>#1958-01-01#</value>
+                  <value>#1959-01-01#</value>
+                  <value>#1960-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Live Ball Era&quot;'>
+                  <value>#1920-01-01#</value>
+                  <value>#1921-01-01#</value>
+                  <value>#1922-01-01#</value>
+                  <value>#1923-01-01#</value>
+                  <value>#1924-01-01#</value>
+                  <value>#1925-01-01#</value>
+                  <value>#1926-01-01#</value>
+                  <value>#1927-01-01#</value>
+                  <value>#1928-01-01#</value>
+                  <value>#1929-01-01#</value>
+                  <value>#1930-01-01#</value>
+                  <value>#1931-01-01#</value>
+                  <value>#1932-01-01#</value>
+                  <value>#1933-01-01#</value>
+                  <value>#1934-01-01#</value>
+                  <value>#1935-01-01#</value>
+                  <value>#1936-01-01#</value>
+                  <value>#1937-01-01#</value>
+                  <value>#1938-01-01#</value>
+                  <value>#1939-01-01#</value>
+                  <value>#1940-01-01#</value>
+                  <value>#1941-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Pre-1900&quot;'>
+                  <value>#1871-01-01#</value>
+                  <value>#1872-01-01#</value>
+                  <value>#1873-01-01#</value>
+                  <value>#1874-01-01#</value>
+                  <value>#1875-01-01#</value>
+                  <value>#1876-01-01#</value>
+                  <value>#1877-01-01#</value>
+                  <value>#1878-01-01#</value>
+                  <value>#1879-01-01#</value>
+                  <value>#1880-01-01#</value>
+                  <value>#1881-01-01#</value>
+                  <value>#1882-01-01#</value>
+                  <value>#1883-01-01#</value>
+                  <value>#1884-01-01#</value>
+                  <value>#1885-01-01#</value>
+                  <value>#1886-01-01#</value>
+                  <value>#1887-01-01#</value>
+                  <value>#1888-01-01#</value>
+                  <value>#1889-01-01#</value>
+                  <value>#1890-01-01#</value>
+                  <value>#1891-01-01#</value>
+                  <value>#1892-01-01#</value>
+                  <value>#1893-01-01#</value>
+                  <value>#1894-01-01#</value>
+                  <value>#1895-01-01#</value>
+                  <value>#1896-01-01#</value>
+                  <value>#1897-01-01#</value>
+                  <value>#1898-01-01#</value>
+                  <value>#1899-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Steroid Era&quot;'>
+                  <value>#1994-01-01#</value>
+                  <value>#1995-01-01#</value>
+                  <value>#1996-01-01#</value>
+                  <value>#1997-01-01#</value>
+                  <value>#1998-01-01#</value>
+                  <value>#1999-01-01#</value>
+                  <value>#2000-01-01#</value>
+                  <value>#2001-01-01#</value>
+                  <value>#2002-01-01#</value>
+                  <value>#2003-01-01#</value>
+                  <value>#2004-01-01#</value>
+                  <value>#2005-01-01#</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='date' name='[yearID (normalized.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[yearID (normalized.csv)]' derivation='Year' name='[yr:yearID (normalized.csv):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv)))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_0C0EB9B84D2D41ABB0658288653C6B66]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yearID (normalized.csv) (group)]' />
+              <groupfilter function='level-members' level='[tyr:yearID (normalized.csv):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Analyics Era&quot;' function='range' level='[yearID (normalized.csv) (group)]' to='&quot;Live Ball Era&quot;' />
+              <groupfilter function='member' level='[yearID (normalized.csv) (group)]' member='&quot;Steroid Era&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]</column>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv)))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BIP:qk]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OPS (normalized.csv):qk]' field-type='quantitative' max='20.734304765896454' min='-2.6579805087463289' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]' scope='rows' value='ERA (Normalized)' />
+            <format attr='title' class='0' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OPS (normalized.csv):qk]' scope='rows' value='OPS (Normalized)' />
+            <format attr='title' class='0' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BIP:qk]' scope='rows' value='BIP' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BIP:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OPS (normalized.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA:qk] + ([federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:ERA (normalized.csv):qk] + ([federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OPS (normalized.csv):qk] + [federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BIP:qk])))</rows>
+        <cols>[federated.1jlut6n0wdzzf71bt60z606zq92g].[yr:yearID (normalized.csv):ok]</cols>
+      </table>
+      <simple-id uuid='{62B9AEA8-B0DA-4FCB-AA61-EA9F0BCB2BF5}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pergame+' name='federated.1jlut6n0wdzzf71bt60z606zq92g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jlut6n0wdzzf71bt60z606zq92g'>
+            <column datatype='real' name='[BA (normalized.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[OBP (normalized.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[OPS (normalized.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[BA (normalized.csv)]' derivation='Sum' name='[sum:BA (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[OBP (normalized.csv)]' derivation='Sum' name='[sum:OBP (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[OPS (normalized.csv)]' derivation='Sum' name='[sum:OPS (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[yearID (normalized.csv) (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[yearID (normalized.csv)]' new-bin='true'>
+                <bin default-name='false' value='&quot;Analyics Era&quot;'>
+                  <value>#2006-01-01#</value>
+                  <value>#2007-01-01#</value>
+                  <value>#2008-01-01#</value>
+                  <value>#2009-01-01#</value>
+                  <value>#2010-01-01#</value>
+                  <value>#2011-01-01#</value>
+                  <value>#2012-01-01#</value>
+                  <value>#2013-01-01#</value>
+                  <value>#2014-01-01#</value>
+                  <value>#2015-01-01#</value>
+                  <value>#2016-01-01#</value>
+                  <value>#2017-01-01#</value>
+                  <value>#2018-01-01#</value>
+                  <value>#2019-01-01#</value>
+                  <value>#2020-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Dead Ball Era&quot;'>
+                  <value>#1901-01-01#</value>
+                  <value>#1902-01-01#</value>
+                  <value>#1903-01-01#</value>
+                  <value>#1904-01-01#</value>
+                  <value>#1905-01-01#</value>
+                  <value>#1906-01-01#</value>
+                  <value>#1907-01-01#</value>
+                  <value>#1908-01-01#</value>
+                  <value>#1909-01-01#</value>
+                  <value>#1910-01-01#</value>
+                  <value>#1911-01-01#</value>
+                  <value>#1912-01-01#</value>
+                  <value>#1913-01-01#</value>
+                  <value>#1914-01-01#</value>
+                  <value>#1915-01-01#</value>
+                  <value>#1916-01-01#</value>
+                  <value>#1917-01-01#</value>
+                  <value>#1918-01-01#</value>
+                  <value>#1919-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Expansion Era&quot;'>
+                  <value>#1961-01-01#</value>
+                  <value>#1962-01-01#</value>
+                  <value>#1963-01-01#</value>
+                  <value>#1964-01-01#</value>
+                  <value>#1965-01-01#</value>
+                  <value>#1966-01-01#</value>
+                  <value>#1967-01-01#</value>
+                  <value>#1968-01-01#</value>
+                  <value>#1969-01-01#</value>
+                  <value>#1970-01-01#</value>
+                  <value>#1971-01-01#</value>
+                  <value>#1972-01-01#</value>
+                  <value>#1973-01-01#</value>
+                  <value>#1974-01-01#</value>
+                  <value>#1975-01-01#</value>
+                  <value>#1976-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Free Agency Era&quot;'>
+                  <value>#1977-01-01#</value>
+                  <value>#1978-01-01#</value>
+                  <value>#1979-01-01#</value>
+                  <value>#1980-01-01#</value>
+                  <value>#1981-01-01#</value>
+                  <value>#1982-01-01#</value>
+                  <value>#1983-01-01#</value>
+                  <value>#1984-01-01#</value>
+                  <value>#1985-01-01#</value>
+                  <value>#1986-01-01#</value>
+                  <value>#1987-01-01#</value>
+                  <value>#1988-01-01#</value>
+                  <value>#1989-01-01#</value>
+                  <value>#1990-01-01#</value>
+                  <value>#1991-01-01#</value>
+                  <value>#1992-01-01#</value>
+                  <value>#1993-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Integration Era&quot;'>
+                  <value>#1942-01-01#</value>
+                  <value>#1943-01-01#</value>
+                  <value>#1944-01-01#</value>
+                  <value>#1945-01-01#</value>
+                  <value>#1946-01-01#</value>
+                  <value>#1947-01-01#</value>
+                  <value>#1948-01-01#</value>
+                  <value>#1949-01-01#</value>
+                  <value>#1950-01-01#</value>
+                  <value>#1951-01-01#</value>
+                  <value>#1952-01-01#</value>
+                  <value>#1953-01-01#</value>
+                  <value>#1954-01-01#</value>
+                  <value>#1955-01-01#</value>
+                  <value>#1956-01-01#</value>
+                  <value>#1957-01-01#</value>
+                  <value>#1958-01-01#</value>
+                  <value>#1959-01-01#</value>
+                  <value>#1960-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Live Ball Era&quot;'>
+                  <value>#1920-01-01#</value>
+                  <value>#1921-01-01#</value>
+                  <value>#1922-01-01#</value>
+                  <value>#1923-01-01#</value>
+                  <value>#1924-01-01#</value>
+                  <value>#1925-01-01#</value>
+                  <value>#1926-01-01#</value>
+                  <value>#1927-01-01#</value>
+                  <value>#1928-01-01#</value>
+                  <value>#1929-01-01#</value>
+                  <value>#1930-01-01#</value>
+                  <value>#1931-01-01#</value>
+                  <value>#1932-01-01#</value>
+                  <value>#1933-01-01#</value>
+                  <value>#1934-01-01#</value>
+                  <value>#1935-01-01#</value>
+                  <value>#1936-01-01#</value>
+                  <value>#1937-01-01#</value>
+                  <value>#1938-01-01#</value>
+                  <value>#1939-01-01#</value>
+                  <value>#1940-01-01#</value>
+                  <value>#1941-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Pre-1900&quot;'>
+                  <value>#1871-01-01#</value>
+                  <value>#1872-01-01#</value>
+                  <value>#1873-01-01#</value>
+                  <value>#1874-01-01#</value>
+                  <value>#1875-01-01#</value>
+                  <value>#1876-01-01#</value>
+                  <value>#1877-01-01#</value>
+                  <value>#1878-01-01#</value>
+                  <value>#1879-01-01#</value>
+                  <value>#1880-01-01#</value>
+                  <value>#1881-01-01#</value>
+                  <value>#1882-01-01#</value>
+                  <value>#1883-01-01#</value>
+                  <value>#1884-01-01#</value>
+                  <value>#1885-01-01#</value>
+                  <value>#1886-01-01#</value>
+                  <value>#1887-01-01#</value>
+                  <value>#1888-01-01#</value>
+                  <value>#1889-01-01#</value>
+                  <value>#1890-01-01#</value>
+                  <value>#1891-01-01#</value>
+                  <value>#1892-01-01#</value>
+                  <value>#1893-01-01#</value>
+                  <value>#1894-01-01#</value>
+                  <value>#1895-01-01#</value>
+                  <value>#1896-01-01#</value>
+                  <value>#1897-01-01#</value>
+                  <value>#1898-01-01#</value>
+                  <value>#1899-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Steroid Era&quot;'>
+                  <value>#1994-01-01#</value>
+                  <value>#1995-01-01#</value>
+                  <value>#1996-01-01#</value>
+                  <value>#1997-01-01#</value>
+                  <value>#1998-01-01#</value>
+                  <value>#1999-01-01#</value>
+                  <value>#2000-01-01#</value>
+                  <value>#2001-01-01#</value>
+                  <value>#2002-01-01#</value>
+                  <value>#2003-01-01#</value>
+                  <value>#2004-01-01#</value>
+                  <value>#2005-01-01#</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='date' name='[yearID (normalized.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[yearID (normalized.csv)]' derivation='Year' name='[yr:yearID (normalized.csv):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Analyics Era&quot;' function='range' level='[yearID (normalized.csv) (group)]' to='&quot;Live Ball Era&quot;' />
+              <groupfilter function='member' level='[yearID (normalized.csv) (group)]' member='&quot;Steroid Era&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OPS (normalized.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BA (normalized.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OBP (normalized.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OPS (normalized.csv):qk] + ([federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BA (normalized.csv):qk] + [federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:OBP (normalized.csv):qk]))</rows>
+        <cols>[federated.1jlut6n0wdzzf71bt60z606zq92g].[yr:yearID (normalized.csv):ok]</cols>
+      </table>
+      <simple-id uuid='{3DEC2847-343D-4E6E-8319-0068383265BA}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Key Stat Comparison</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pergame+' name='federated.1jlut6n0wdzzf71bt60z606zq92g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jlut6n0wdzzf71bt60z606zq92g'>
+            <column datatype='real' name='[BA (normalized.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[ERA (normalized.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[OPS (normalized.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[BA (normalized.csv)]' derivation='Avg' name='[avg:BA (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ERA (normalized.csv)]' derivation='Avg' name='[avg:ERA (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[OPS (normalized.csv)]' derivation='Avg' name='[avg:OPS (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BA (normalized.csv)]' derivation='Sum' name='[sum:BA (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[yearID (normalized.csv) (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[yearID (normalized.csv)]' new-bin='true'>
+                <bin default-name='false' value='&quot;Analyics Era&quot;'>
+                  <value>#2006-01-01#</value>
+                  <value>#2007-01-01#</value>
+                  <value>#2008-01-01#</value>
+                  <value>#2009-01-01#</value>
+                  <value>#2010-01-01#</value>
+                  <value>#2011-01-01#</value>
+                  <value>#2012-01-01#</value>
+                  <value>#2013-01-01#</value>
+                  <value>#2014-01-01#</value>
+                  <value>#2015-01-01#</value>
+                  <value>#2016-01-01#</value>
+                  <value>#2017-01-01#</value>
+                  <value>#2018-01-01#</value>
+                  <value>#2019-01-01#</value>
+                  <value>#2020-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Dead Ball Era&quot;'>
+                  <value>#1901-01-01#</value>
+                  <value>#1902-01-01#</value>
+                  <value>#1903-01-01#</value>
+                  <value>#1904-01-01#</value>
+                  <value>#1905-01-01#</value>
+                  <value>#1906-01-01#</value>
+                  <value>#1907-01-01#</value>
+                  <value>#1908-01-01#</value>
+                  <value>#1909-01-01#</value>
+                  <value>#1910-01-01#</value>
+                  <value>#1911-01-01#</value>
+                  <value>#1912-01-01#</value>
+                  <value>#1913-01-01#</value>
+                  <value>#1914-01-01#</value>
+                  <value>#1915-01-01#</value>
+                  <value>#1916-01-01#</value>
+                  <value>#1917-01-01#</value>
+                  <value>#1918-01-01#</value>
+                  <value>#1919-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Expansion Era&quot;'>
+                  <value>#1961-01-01#</value>
+                  <value>#1962-01-01#</value>
+                  <value>#1963-01-01#</value>
+                  <value>#1964-01-01#</value>
+                  <value>#1965-01-01#</value>
+                  <value>#1966-01-01#</value>
+                  <value>#1967-01-01#</value>
+                  <value>#1968-01-01#</value>
+                  <value>#1969-01-01#</value>
+                  <value>#1970-01-01#</value>
+                  <value>#1971-01-01#</value>
+                  <value>#1972-01-01#</value>
+                  <value>#1973-01-01#</value>
+                  <value>#1974-01-01#</value>
+                  <value>#1975-01-01#</value>
+                  <value>#1976-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Free Agency Era&quot;'>
+                  <value>#1977-01-01#</value>
+                  <value>#1978-01-01#</value>
+                  <value>#1979-01-01#</value>
+                  <value>#1980-01-01#</value>
+                  <value>#1981-01-01#</value>
+                  <value>#1982-01-01#</value>
+                  <value>#1983-01-01#</value>
+                  <value>#1984-01-01#</value>
+                  <value>#1985-01-01#</value>
+                  <value>#1986-01-01#</value>
+                  <value>#1987-01-01#</value>
+                  <value>#1988-01-01#</value>
+                  <value>#1989-01-01#</value>
+                  <value>#1990-01-01#</value>
+                  <value>#1991-01-01#</value>
+                  <value>#1992-01-01#</value>
+                  <value>#1993-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Integration Era&quot;'>
+                  <value>#1942-01-01#</value>
+                  <value>#1943-01-01#</value>
+                  <value>#1944-01-01#</value>
+                  <value>#1945-01-01#</value>
+                  <value>#1946-01-01#</value>
+                  <value>#1947-01-01#</value>
+                  <value>#1948-01-01#</value>
+                  <value>#1949-01-01#</value>
+                  <value>#1950-01-01#</value>
+                  <value>#1951-01-01#</value>
+                  <value>#1952-01-01#</value>
+                  <value>#1953-01-01#</value>
+                  <value>#1954-01-01#</value>
+                  <value>#1955-01-01#</value>
+                  <value>#1956-01-01#</value>
+                  <value>#1957-01-01#</value>
+                  <value>#1958-01-01#</value>
+                  <value>#1959-01-01#</value>
+                  <value>#1960-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Live Ball Era&quot;'>
+                  <value>#1920-01-01#</value>
+                  <value>#1921-01-01#</value>
+                  <value>#1922-01-01#</value>
+                  <value>#1923-01-01#</value>
+                  <value>#1924-01-01#</value>
+                  <value>#1925-01-01#</value>
+                  <value>#1926-01-01#</value>
+                  <value>#1927-01-01#</value>
+                  <value>#1928-01-01#</value>
+                  <value>#1929-01-01#</value>
+                  <value>#1930-01-01#</value>
+                  <value>#1931-01-01#</value>
+                  <value>#1932-01-01#</value>
+                  <value>#1933-01-01#</value>
+                  <value>#1934-01-01#</value>
+                  <value>#1935-01-01#</value>
+                  <value>#1936-01-01#</value>
+                  <value>#1937-01-01#</value>
+                  <value>#1938-01-01#</value>
+                  <value>#1939-01-01#</value>
+                  <value>#1940-01-01#</value>
+                  <value>#1941-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Pre-1900&quot;'>
+                  <value>#1871-01-01#</value>
+                  <value>#1872-01-01#</value>
+                  <value>#1873-01-01#</value>
+                  <value>#1874-01-01#</value>
+                  <value>#1875-01-01#</value>
+                  <value>#1876-01-01#</value>
+                  <value>#1877-01-01#</value>
+                  <value>#1878-01-01#</value>
+                  <value>#1879-01-01#</value>
+                  <value>#1880-01-01#</value>
+                  <value>#1881-01-01#</value>
+                  <value>#1882-01-01#</value>
+                  <value>#1883-01-01#</value>
+                  <value>#1884-01-01#</value>
+                  <value>#1885-01-01#</value>
+                  <value>#1886-01-01#</value>
+                  <value>#1887-01-01#</value>
+                  <value>#1888-01-01#</value>
+                  <value>#1889-01-01#</value>
+                  <value>#1890-01-01#</value>
+                  <value>#1891-01-01#</value>
+                  <value>#1892-01-01#</value>
+                  <value>#1893-01-01#</value>
+                  <value>#1894-01-01#</value>
+                  <value>#1895-01-01#</value>
+                  <value>#1896-01-01#</value>
+                  <value>#1897-01-01#</value>
+                  <value>#1898-01-01#</value>
+                  <value>#1899-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Steroid Era&quot;'>
+                  <value>#1994-01-01#</value>
+                  <value>#1995-01-01#</value>
+                  <value>#1996-01-01#</value>
+                  <value>#1997-01-01#</value>
+                  <value>#1998-01-01#</value>
+                  <value>#1999-01-01#</value>
+                  <value>#2000-01-01#</value>
+                  <value>#2001-01-01#</value>
+                  <value>#2002-01-01#</value>
+                  <value>#2003-01-01#</value>
+                  <value>#2004-01-01#</value>
+                  <value>#2005-01-01#</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='date' name='[yearID (normalized.csv)]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:OPS (normalized.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:BA (normalized.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:OPS (normalized.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[avg:ERA (normalized.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BA (normalized.csv):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yearID (normalized.csv) (group)]' member='&quot;Analyics Era&quot;' />
+              <groupfilter function='member' level='[yearID (normalized.csv) (group)]' member='&quot;Dead Ball Era&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[:Measure Names]</column>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[Multiple Values]' scope='rows' value='Value (Normalized)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jlut6n0wdzzf71bt60z606zq92g].[Multiple Values]</rows>
+        <cols>([federated.1jlut6n0wdzzf71bt60z606zq92g].[:Measure Names] / [federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)])</cols>
+      </table>
+      <simple-id uuid='{3C341488-3A1A-45BB-B44E-45B0014999C2}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Three True Outcomes (Per Game)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pergame+' name='federated.1jlut6n0wdzzf71bt60z606zq92g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jlut6n0wdzzf71bt60z606zq92g'>
+            <column datatype='real' name='[BB (normalized.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[BB]' role='measure' type='quantitative' />
+            <column datatype='real' name='[HR (normalized.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[HR]' role='measure' type='quantitative' />
+            <column datatype='real' name='[SO (normalized.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[SO]' role='measure' type='quantitative' />
+            <column-instance column='[BB (normalized.csv)]' derivation='Sum' name='[sum:BB (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BB]' derivation='Sum' name='[sum:BB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HR (normalized.csv)]' derivation='Sum' name='[sum:HR (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HR]' derivation='Sum' name='[sum:HR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SO (normalized.csv)]' derivation='Sum' name='[sum:SO (normalized.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SO]' derivation='Sum' name='[sum:SO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yearID (normalized.csv)]' derivation='Year-Trunc' name='[tyr:yearID (normalized.csv):ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[yearID (normalized.csv) (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[yearID (normalized.csv)]' new-bin='true'>
+                <bin default-name='false' value='&quot;Analyics Era&quot;'>
+                  <value>#2006-01-01#</value>
+                  <value>#2007-01-01#</value>
+                  <value>#2008-01-01#</value>
+                  <value>#2009-01-01#</value>
+                  <value>#2010-01-01#</value>
+                  <value>#2011-01-01#</value>
+                  <value>#2012-01-01#</value>
+                  <value>#2013-01-01#</value>
+                  <value>#2014-01-01#</value>
+                  <value>#2015-01-01#</value>
+                  <value>#2016-01-01#</value>
+                  <value>#2017-01-01#</value>
+                  <value>#2018-01-01#</value>
+                  <value>#2019-01-01#</value>
+                  <value>#2020-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Dead Ball Era&quot;'>
+                  <value>#1901-01-01#</value>
+                  <value>#1902-01-01#</value>
+                  <value>#1903-01-01#</value>
+                  <value>#1904-01-01#</value>
+                  <value>#1905-01-01#</value>
+                  <value>#1906-01-01#</value>
+                  <value>#1907-01-01#</value>
+                  <value>#1908-01-01#</value>
+                  <value>#1909-01-01#</value>
+                  <value>#1910-01-01#</value>
+                  <value>#1911-01-01#</value>
+                  <value>#1912-01-01#</value>
+                  <value>#1913-01-01#</value>
+                  <value>#1914-01-01#</value>
+                  <value>#1915-01-01#</value>
+                  <value>#1916-01-01#</value>
+                  <value>#1917-01-01#</value>
+                  <value>#1918-01-01#</value>
+                  <value>#1919-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Expansion Era&quot;'>
+                  <value>#1961-01-01#</value>
+                  <value>#1962-01-01#</value>
+                  <value>#1963-01-01#</value>
+                  <value>#1964-01-01#</value>
+                  <value>#1965-01-01#</value>
+                  <value>#1966-01-01#</value>
+                  <value>#1967-01-01#</value>
+                  <value>#1968-01-01#</value>
+                  <value>#1969-01-01#</value>
+                  <value>#1970-01-01#</value>
+                  <value>#1971-01-01#</value>
+                  <value>#1972-01-01#</value>
+                  <value>#1973-01-01#</value>
+                  <value>#1974-01-01#</value>
+                  <value>#1975-01-01#</value>
+                  <value>#1976-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Free Agency Era&quot;'>
+                  <value>#1977-01-01#</value>
+                  <value>#1978-01-01#</value>
+                  <value>#1979-01-01#</value>
+                  <value>#1980-01-01#</value>
+                  <value>#1981-01-01#</value>
+                  <value>#1982-01-01#</value>
+                  <value>#1983-01-01#</value>
+                  <value>#1984-01-01#</value>
+                  <value>#1985-01-01#</value>
+                  <value>#1986-01-01#</value>
+                  <value>#1987-01-01#</value>
+                  <value>#1988-01-01#</value>
+                  <value>#1989-01-01#</value>
+                  <value>#1990-01-01#</value>
+                  <value>#1991-01-01#</value>
+                  <value>#1992-01-01#</value>
+                  <value>#1993-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Integration Era&quot;'>
+                  <value>#1942-01-01#</value>
+                  <value>#1943-01-01#</value>
+                  <value>#1944-01-01#</value>
+                  <value>#1945-01-01#</value>
+                  <value>#1946-01-01#</value>
+                  <value>#1947-01-01#</value>
+                  <value>#1948-01-01#</value>
+                  <value>#1949-01-01#</value>
+                  <value>#1950-01-01#</value>
+                  <value>#1951-01-01#</value>
+                  <value>#1952-01-01#</value>
+                  <value>#1953-01-01#</value>
+                  <value>#1954-01-01#</value>
+                  <value>#1955-01-01#</value>
+                  <value>#1956-01-01#</value>
+                  <value>#1957-01-01#</value>
+                  <value>#1958-01-01#</value>
+                  <value>#1959-01-01#</value>
+                  <value>#1960-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Live Ball Era&quot;'>
+                  <value>#1920-01-01#</value>
+                  <value>#1921-01-01#</value>
+                  <value>#1922-01-01#</value>
+                  <value>#1923-01-01#</value>
+                  <value>#1924-01-01#</value>
+                  <value>#1925-01-01#</value>
+                  <value>#1926-01-01#</value>
+                  <value>#1927-01-01#</value>
+                  <value>#1928-01-01#</value>
+                  <value>#1929-01-01#</value>
+                  <value>#1930-01-01#</value>
+                  <value>#1931-01-01#</value>
+                  <value>#1932-01-01#</value>
+                  <value>#1933-01-01#</value>
+                  <value>#1934-01-01#</value>
+                  <value>#1935-01-01#</value>
+                  <value>#1936-01-01#</value>
+                  <value>#1937-01-01#</value>
+                  <value>#1938-01-01#</value>
+                  <value>#1939-01-01#</value>
+                  <value>#1940-01-01#</value>
+                  <value>#1941-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Pre-1900&quot;'>
+                  <value>#1871-01-01#</value>
+                  <value>#1872-01-01#</value>
+                  <value>#1873-01-01#</value>
+                  <value>#1874-01-01#</value>
+                  <value>#1875-01-01#</value>
+                  <value>#1876-01-01#</value>
+                  <value>#1877-01-01#</value>
+                  <value>#1878-01-01#</value>
+                  <value>#1879-01-01#</value>
+                  <value>#1880-01-01#</value>
+                  <value>#1881-01-01#</value>
+                  <value>#1882-01-01#</value>
+                  <value>#1883-01-01#</value>
+                  <value>#1884-01-01#</value>
+                  <value>#1885-01-01#</value>
+                  <value>#1886-01-01#</value>
+                  <value>#1887-01-01#</value>
+                  <value>#1888-01-01#</value>
+                  <value>#1889-01-01#</value>
+                  <value>#1890-01-01#</value>
+                  <value>#1891-01-01#</value>
+                  <value>#1892-01-01#</value>
+                  <value>#1893-01-01#</value>
+                  <value>#1894-01-01#</value>
+                  <value>#1895-01-01#</value>
+                  <value>#1896-01-01#</value>
+                  <value>#1897-01-01#</value>
+                  <value>#1898-01-01#</value>
+                  <value>#1899-01-01#</value>
+                </bin>
+                <bin default-name='false' value='&quot;Steroid Era&quot;'>
+                  <value>#1994-01-01#</value>
+                  <value>#1995-01-01#</value>
+                  <value>#1996-01-01#</value>
+                  <value>#1997-01-01#</value>
+                  <value>#1998-01-01#</value>
+                  <value>#1999-01-01#</value>
+                  <value>#2000-01-01#</value>
+                  <value>#2001-01-01#</value>
+                  <value>#2002-01-01#</value>
+                  <value>#2003-01-01#</value>
+                  <value>#2004-01-01#</value>
+                  <value>#2005-01-01#</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='date' name='[yearID (normalized.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[yearID (normalized.csv)]' derivation='Year' name='[yr:yearID (normalized.csv):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BB (normalized.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:HR (normalized.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:SO (normalized.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv))) 1]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_B0C311BC61F94E5393ED92E2E10AF8B1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yearID (normalized.csv) (group)]' />
+              <groupfilter function='level-members' level='[yr:yearID (normalized.csv):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv)))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_0C0EB9B84D2D41ABB0658288653C6B66]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yearID (normalized.csv) (group)]' />
+              <groupfilter function='level-members' level='[tyr:yearID (normalized.csv):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Analyics Era&quot;' function='range' level='[yearID (normalized.csv) (group)]' to='&quot;Live Ball Era&quot;' />
+              <groupfilter function='member' level='[yearID (normalized.csv) (group)]' member='&quot;Steroid Era&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[:Measure Names]</column>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]</column>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv)))]</column>
+            <column>[federated.1jlut6n0wdzzf71bt60z606zq92g].[Action (yearID (normalized.csv) (group),YEAR(yearID (normalized.csv))) 1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:SO:qk]' scope='rows' value='K' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:HR:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BB:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:SO:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:HR:qk] + ([federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:BB:qk] + [federated.1jlut6n0wdzzf71bt60z606zq92g].[sum:SO:qk]))</rows>
+        <cols>[federated.1jlut6n0wdzzf71bt60z606zq92g].[yr:yearID (normalized.csv):ok]</cols>
+      </table>
+      <simple-id uuid='{05C72464-3A24-4D52-9A4D-D720DE367E9E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Is baseball returning to the Dead Ball Era?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5250' id='14' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92750' id='5' param='horz' type-v2='layout-flow' w='98400' x='800' y='6250'>
+              <zone h='92750' id='3' type-v2='layout-basic' w='56100' x='800' y='6250'>
+                <zone h='30522' id='1' name='Sheet 1' w='56100' x='800' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='349' h='47322' id='9' is-fixed='true' name='Sheet 5' w='56100' x='800' y='36772'>
+                  <layout-cache minheight='397' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='110' h='14906' id='6' is-fixed='true' name='Sheet 1' pane-specification-id='0' param='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' type-v2='color' w='28050' x='800' y='84094'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='14906' id='11' type-v2='text' w='28050' x='28850' y='84094'>
+                  <formatted-text>
+                    <run fontcolor='#333333'>OPS - On-Base Plus Slugging</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>ERA - Earned Run Average</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>BA - Batting Average</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>BIP - Balls in Play</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>HR - Home Runs</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>BB - Base on Balls (Walk)</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>K - Strike Out</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='423' h='92750' id='10' is-fixed='true' type-v2='layout-basic' w='42300' x='56900' y='6250'>
+                <zone h='44718' id='4' param='vert' type-v2='layout-flow' w='42300' x='56900' y='6250'>
+                  <zone h='44718' id='7' name='Sheet 4' w='42300' x='56900' y='6250'>
+                    <layout-cache cell-count-w='6' minheight='204' non-cell-size-w='60' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='48032' id='8' name='Sheet 2' w='42300' x='56900' y='50968'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Is baseball returning to the Dead Ball Era?</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='27' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5250' id='14' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='236' h='30522' id='1' is-fixed='true' name='Sheet 1' w='56100' x='800' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='110' h='14906' id='6' name='Sheet 1' pane-specification-id='0' param='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' type-v2='color' w='28050' x='800' y='84094'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44718' id='7' is-fixed='true' name='Sheet 4' w='42300' x='56900' y='6250'>
+                  <layout-cache cell-count-w='6' minheight='204' non-cell-size-w='60' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47322' id='9' is-fixed='true' name='Sheet 5' w='56100' x='800' y='36772'>
+                  <layout-cache minheight='397' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48032' id='8' is-fixed='true' name='Sheet 2' w='42300' x='56900' y='50968'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='14906' id='11' type-v2='text' w='28050' x='28850' y='84094'>
+                  <formatted-text>
+                    <run fontcolor='#333333'>OPS - On-Base Plus Slugging</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>ERA - Earned Run Average</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>BA - Batting Average</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>BIP - Balls in Play</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>HR - Home Runs</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>BB - Base on Balls (Walk)</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333'>K - Strike Out</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D6B5013D-3034-4815-9DF4-F5000FDADBCB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='125'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{07561C18-411F-4A47-BD6A-0804C4E3CE49}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='9' param='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A93A5175-712A-41E5-AF20-EBD953A50E21}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E290FB4-52F5-49F9-8964-DA9315DCB653}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3B0E240F-0A1E-4E76-998C-7C0333250047}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1jlut6n0wdzzf71bt60z606zq92g].[yearID (normalized.csv) (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B038375C-A9E7-4B3B-B5F0-56C32D20B742}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+      <simple-id uuid='{34D0F3A9-C963-48B9-A49A-2BF0EB0D7B82}' />
+    </window>
+  </windows>
+</workbook>
