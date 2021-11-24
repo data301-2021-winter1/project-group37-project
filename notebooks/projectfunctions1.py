@@ -87,7 +87,7 @@ def normal_data(df):
     '''
     dfn=((df-df.min())/(df.max()-df.min()))*20 
     dfn[['yearID', 'games', 'decade']] = df[['yearID', 'games', 'decade']] 
-    dfn = dfn[['decade','yearID','BA', 'BABIP', 'KPG', 'OBP', 'BBPG', 'ERA', 'OPS', 'SLG']]
+    dfn = dfn[['yearID','BA', 'BABIP', 'KPG', 'OBP', 'BBPG', 'ERA', 'OPS', 'SLG','decade']]
     return dfn
 
 def per_game(df):
@@ -99,5 +99,5 @@ def per_game(df):
     '''
     dfpg = df.div(df['games'], axis = 0)
     dfpg[['decade', 'games', 'yearID']] = df[['decade', 'games', 'yearID']]
-    dfpg = dfpg[['decade','yearID','R', 'HR', 'BB', 'SO', 'BIP']]
+    dfpg = dfpg[['yearID','R', 'HR', 'BB', 'SO', 'BIP','decade']]
     return dfpg
