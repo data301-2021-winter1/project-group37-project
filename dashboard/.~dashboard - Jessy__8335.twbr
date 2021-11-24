@@ -1,0 +1,954 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.21.0108.0943                               -->
+<workbook source-build='2019.3.17 (20193.21.0108.0943)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Batting' inline='true' name='federated.1fppc6q0sfi5kw1atase60pjoh7d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Batting' name='textscan.0sksae21ehg81017pubis06okxez'>
+            <connection class='textscan' directory='/Users/jessicagale/project-group37-project/data/raw' filename='Batting.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Batting.csv].[yearID]' />
+              <expression op='[HallOfFame.csv].[yearID]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.0sksae21ehg81017pubis06okxez' name='Batting.csv' table='[Batting#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='playerID' ordinal='0' />
+              <column datatype='integer' name='yearID' ordinal='1' />
+              <column datatype='integer' name='stint' ordinal='2' />
+              <column datatype='string' name='teamID' ordinal='3' />
+              <column datatype='string' name='lgID' ordinal='4' />
+              <column datatype='integer' name='G' ordinal='5' />
+              <column datatype='integer' name='AB' ordinal='6' />
+              <column datatype='integer' name='R' ordinal='7' />
+              <column datatype='integer' name='H' ordinal='8' />
+              <column datatype='integer' name='2B' ordinal='9' />
+              <column datatype='integer' name='3B' ordinal='10' />
+              <column datatype='integer' name='HR' ordinal='11' />
+              <column datatype='integer' name='RBI' ordinal='12' />
+              <column datatype='integer' name='SB' ordinal='13' />
+              <column datatype='integer' name='CS' ordinal='14' />
+              <column datatype='integer' name='BB' ordinal='15' />
+              <column datatype='integer' name='SO' ordinal='16' />
+              <column datatype='string' name='IBB' ordinal='17' />
+              <column datatype='string' name='HBP' ordinal='18' />
+              <column datatype='string' name='SH' ordinal='19' />
+              <column datatype='string' name='SF' ordinal='20' />
+              <column datatype='integer' name='GIDP' ordinal='21' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0sksae21ehg81017pubis06okxez' name='HallOfFame.csv' table='[HallOfFame#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='playerID' ordinal='0' />
+              <column datatype='integer' name='yearID' ordinal='1' />
+              <column datatype='string' name='votedBy' ordinal='2' />
+              <column datatype='integer' name='ballots' ordinal='3' />
+              <column datatype='integer' name='needed' ordinal='4' />
+              <column datatype='integer' name='votes' ordinal='5' />
+              <column datatype='string' name='inducted' ordinal='6' />
+              <column datatype='string' name='category' ordinal='7' />
+              <column datatype='string' name='needed_note' ordinal='8' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[2B]' value='[Batting.csv].[2B]' />
+          <map key='[3B]' value='[Batting.csv].[3B]' />
+          <map key='[AB]' value='[Batting.csv].[AB]' />
+          <map key='[BB]' value='[Batting.csv].[BB]' />
+          <map key='[CS]' value='[Batting.csv].[CS]' />
+          <map key='[GIDP]' value='[Batting.csv].[GIDP]' />
+          <map key='[G]' value='[Batting.csv].[G]' />
+          <map key='[HBP]' value='[Batting.csv].[HBP]' />
+          <map key='[HR]' value='[Batting.csv].[HR]' />
+          <map key='[H]' value='[Batting.csv].[H]' />
+          <map key='[IBB]' value='[Batting.csv].[IBB]' />
+          <map key='[RBI]' value='[Batting.csv].[RBI]' />
+          <map key='[R]' value='[Batting.csv].[R]' />
+          <map key='[SB]' value='[Batting.csv].[SB]' />
+          <map key='[SF]' value='[Batting.csv].[SF]' />
+          <map key='[SH]' value='[Batting.csv].[SH]' />
+          <map key='[SO]' value='[Batting.csv].[SO]' />
+          <map key='[ballots]' value='[HallOfFame.csv].[ballots]' />
+          <map key='[category]' value='[HallOfFame.csv].[category]' />
+          <map key='[inducted]' value='[HallOfFame.csv].[inducted]' />
+          <map key='[lgID]' value='[Batting.csv].[lgID]' />
+          <map key='[needed]' value='[HallOfFame.csv].[needed]' />
+          <map key='[needed_note]' value='[HallOfFame.csv].[needed_note]' />
+          <map key='[playerID (HallOfFame.csv)]' value='[HallOfFame.csv].[playerID]' />
+          <map key='[playerID]' value='[Batting.csv].[playerID]' />
+          <map key='[stint]' value='[Batting.csv].[stint]' />
+          <map key='[teamID]' value='[Batting.csv].[teamID]' />
+          <map key='[votedBy]' value='[HallOfFame.csv].[votedBy]' />
+          <map key='[votes]' value='[HallOfFame.csv].[votes]' />
+          <map key='[yearID (HallOfFame.csv)]' value='[HallOfFame.csv].[yearID]' />
+          <map key='[yearID]' value='[Batting.csv].[yearID]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[playerID]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>playerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yearID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yearID]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>yearID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stint</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stint]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>stint</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>teamID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[teamID]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>teamID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lgID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lgID]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>lgID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>G</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AB]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>AB</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>R</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>H</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[H]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>H</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2B]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>2B</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3B]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>3B</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HR]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>HR</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RBI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RBI]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>RBI</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SB]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>SB</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CS]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>CS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BB]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>BB</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SO]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>SO</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IBB</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IBB]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>IBB</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HBP]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>HBP</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SH</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SH]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>SH</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SF</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SF]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>SF</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GIDP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GIDP]</local-name>
+            <parent-name>[Batting.csv]</parent-name>
+            <remote-alias>GIDP</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[playerID (HallOfFame.csv)]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>playerID</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yearID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yearID (HallOfFame.csv)]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>yearID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>votedBy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[votedBy]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>votedBy</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballots</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ballots]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>ballots</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>needed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[needed]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>needed</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[votes]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>votes</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inducted</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[inducted]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>inducted</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>needed_note</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[needed_note]</local-name>
+            <parent-name>[HallOfFame.csv]</parent-name>
+            <remote-alias>needed_note</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[3B]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[BB]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[CS]' role='measure' type='quantitative' />
+      <column caption='Gidp' datatype='integer' hidden='true' name='[GIDP]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[G]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[HBP]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[HR]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[IBB]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' hidden='true' name='[SF]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[SH]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[SO]' role='measure' type='quantitative' />
+      <column caption='Ballots' datatype='integer' name='[ballots]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Inducted' datatype='string' name='[inducted]' role='dimension' type='nominal' />
+      <column caption='Lg ID' datatype='string' name='[lgID]' role='dimension' type='nominal' />
+      <column caption='Needed' datatype='integer' name='[needed]' role='measure' type='quantitative' />
+      <column caption='Needed Note' datatype='string' name='[needed_note]' role='dimension' type='nominal' />
+      <column caption='Player ID' datatype='string' name='[playerID]' role='dimension' type='nominal' />
+      <column caption='Stint' datatype='integer' hidden='true' name='[stint]' role='measure' type='quantitative' />
+      <column caption='Team ID' datatype='string' name='[teamID]' role='dimension' type='nominal' />
+      <column caption='Voted By' datatype='string' name='[votedBy]' role='dimension' type='nominal' />
+      <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[yearID (HallOfFame.csv)]' role='dimension' type='ordinal' />
+      <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.500861' measure-ordering='alphabetic' measure-percentage='0.499139' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Teams with the highest number of records</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Batting' name='federated.1fppc6q0sfi5kw1atase60pjoh7d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fppc6q0sfi5kw1atase60pjoh7d'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[teamID]' derivation='None' name='[none:teamID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Team ID' datatype='string' name='[teamID]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[sum:Number of Records:qk]' />
+              <color column='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[sum:Number of Records:qk]' />
+              <text column='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:teamID:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B768BB19-39A3-437C-B8EB-0D796CD63EC6}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Teams inducted into HOF with highest number of records</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Batting' name='federated.1fppc6q0sfi5kw1atase60pjoh7d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fppc6q0sfi5kw1atase60pjoh7d'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Inducted' datatype='string' name='[inducted]' role='dimension' type='nominal' />
+            <column-instance column='[inducted]' derivation='None' name='[none:inducted:nk]' pivot='key' type='nominal' />
+            <column-instance column='[yearID]' derivation='None' name='[none:yearID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[sum:Number of Records:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[sum:Number of Records:qk]' />
+              <text column='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:inducted:nk]' />
+              <text column='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:yearID:ok]' />
+              <color column='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:inducted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{91CED794-7F34-4BFF-92DC-1756B3D4EA1E}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Voting groups who voted for records</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Batting' name='federated.1fppc6q0sfi5kw1atase60pjoh7d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fppc6q0sfi5kw1atase60pjoh7d'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[votedBy]' derivation='None' name='[none:votedBy:nk]' pivot='key' type='nominal' />
+            <column-instance column='[yearID]' derivation='None' name='[none:yearID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Voted By' datatype='string' name='[votedBy]' role='dimension' type='nominal' />
+            <column caption='Year ID' datatype='integer' name='[yearID]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:yearID:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1fppc6q0sfi5kw1atase60pjoh7d].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:votedBy:nk]</cols>
+      </table>
+      <simple-id uuid='{17D545CF-69F5-425F-B4EB-956F67F8559D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='54400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Sheet 1' w='54400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Sheet 2' w='54400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='440' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='44000' x='55200' y='1000'>
+              <zone h='8125' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[sum:Number of Records:qk]' type='color' w='44000' x='55200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='43' h='6375' id='10' is-fixed='true' name='Sheet 2' pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:inducted:nk]' type='color' w='44000' x='55200' y='9125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='51125' id='11' name='Sheet 3' w='44000' x='55200' y='15500'>
+                <layout-cache cell-count-w='9' minheight='243' non-cell-size-w='66' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='251' h='32375' id='12' is-fixed='true' name='Sheet 3' pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:yearID:ok]' type='color' w='44000' x='55200' y='66625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='24' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Sheet 1' w='54400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[sum:Number of Records:qk]' type='color' w='44000' x='55200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51125' id='11' is-fixed='true' name='Sheet 3' w='44000' x='55200' y='15500'>
+                  <layout-cache cell-count-w='9' minheight='243' non-cell-size-w='66' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='251' h='32375' id='12' name='Sheet 3' pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:yearID:ok]' type='color' w='44000' x='55200' y='66625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Sheet 2' w='54400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='43' h='6375' id='10' name='Sheet 2' pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:inducted:nk]' type='color' w='44000' x='55200' y='9125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D9B9174B-9967-4FFE-AA09-F1AC171E72D9}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[sum:Number of Records:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F12FCCB0-B05B-4E57-9897-B671C4C6ADBA}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:inducted:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4F69C480-B25B-4C74-9934-468A3FBF1513}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fppc6q0sfi5kw1atase60pjoh7d].[none:yearID:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FEE1FA49-F2EB-4E67-A00E-389D55D80470}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C355684E-FC3F-4AC8-BD78-4AFDCCA005CC}' />
+    </window>
+  </windows>
+</workbook>
